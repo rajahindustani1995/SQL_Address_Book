@@ -21,3 +21,6 @@ insert into AddressBook values
 ('Ashish', 'Sutar', 'Katraj', 'Pune', 'Maharashtra', 411058, 9545443210, 'ashish.sutar@gmail.com'),
 ('Sam', 'Lodha', 'Kalleshwara', 'Allipura', 'Karnataka', 583219, 8362331741, 'sam.lodha@gmail.com'),
 ('Pooja', 'Patil', 'Nerul', 'Navi Mumbai', 'Maharashtra', 400041, 8342587361, 'pooja.patil@gmail.com');
+
+-------UC4 Edit contacts in AddressBook table using their name------
+update AddressBook set Phone = 89767364703 where FirstName = 'Sam';
