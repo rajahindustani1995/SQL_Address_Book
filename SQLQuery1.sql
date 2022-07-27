@@ -24,3 +24,6 @@ insert into AddressBook values
 
 -------UC4 Edit contacts in AddressBook table using their name------
 update AddressBook set Phone = 89767364703 where FirstName = 'Sam';
+
+-------UC5 Detele contact using first name-------
+delete from AddressBook where FirstName = 'Pooja';
