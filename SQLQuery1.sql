@@ -61,3 +61,6 @@ update AddressBook set Type='Friends' where FirstName='Ashish';
 update AddressBook set Type='Proffession' where FirstName='Sam';
 update AddressBook set Type='Friends' where FirstName='Pooja';
 update AddressBook set Type='Family' where FirstName='Priya';
+
+-------UC10 Count Number of contacts in AddressBook-------
+select count(Type) as NumberOfPersons from AddressBook;
