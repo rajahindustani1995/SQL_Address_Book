@@ -43,3 +43,13 @@ select City, count(City) as 'Total Contacts' from AddressBook group by City;
 
 -- size by State
 select State, count(State) as 'Total Contacts' from AddressBook group by State;
+
+-------UC8 retrieve entries sorted alphabetically by name for a given city------
+------Insert new contact details
+insert into AddressBook values
+('Priya', 'Tupe', 'Karad', 'Pune', 'Maharashtra', 411067, 8434254340, 'priya.tupe@gmail.com');
+select * from AddressBook;
+
+select * from AddressBook where City = 'Pune' order by FirstName;
+-------For Learning trail by State 
+select * from AddressBook where State = 'Maharashtra' order by FirstName;
