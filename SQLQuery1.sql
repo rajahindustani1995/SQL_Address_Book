@@ -64,3 +64,10 @@ update AddressBook set Type='Family' where FirstName='Priya';
 
 -------UC10 Count Number of contacts in AddressBook-------
 select count(Type) as NumberOfPersons from AddressBook;
+
+------UC11 Add contact in both Friends And Family-------
+insert into AddressBook(FirstName,LastName,Address,City,State,Zip,Phone,Email,Type) 
+values('Pramod', 'Ambavale', 'Chembur', 'Mumbai', 'Maharashtra', 400034, 9865443486, 'pramod.ambavale@gmail.com', 'Friends'),
+('Pramod', 'Ambavale', 'Chembur', 'Mumbai', 'Maharashtra', 400034, 9865443486, 'pramod.ambavale@gmail.com','Family');
+
+select * from AddressBook;
