@@ -53,3 +53,11 @@ select * from AddressBook;
 select * from AddressBook where City = 'Pune' order by FirstName;
 -------For Learning trail by State 
 select * from AddressBook where State = 'Maharashtra' order by FirstName;
+
+-------UC9 Add Type in AddressBook Table-------
+Alter table AddressBook add Type varchar(200);
+
+update AddressBook set Type='Friends' where FirstName='Ashish';
+update AddressBook set Type='Proffession' where FirstName='Sam';
+update AddressBook set Type='Friends' where FirstName='Pooja';
+update AddressBook set Type='Family' where FirstName='Priya';
